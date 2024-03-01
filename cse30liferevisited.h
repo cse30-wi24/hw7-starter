@@ -16,11 +16,8 @@ typedef struct {
 	unsigned int gen; /* generation number */
 } Board;
 
-void delete_board(Board **board);
 void clear_board(Board *board);
 void swap_buffers(Board *board);
-void sim_step(Board *board, unsigned int steps);
-void set_sim(Board *board, void (*sim)(Board *board, unsigned int steps));
 size_t get_index(size_t ncols, size_t row, size_t col);
 
 size_t mod(int x, size_t N);
